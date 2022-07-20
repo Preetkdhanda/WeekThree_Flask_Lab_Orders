@@ -20,6 +20,13 @@
      
 
     </section>
+   
+    {% endfor %}
+
+    {% for order in all_orders%}
+    <p> <a href="/orders/{{all_orders.index(order)}}"> {{order.cust_name}} </a></p>
+
+    
 
     {% endfor %}
 </body>
